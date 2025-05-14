@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="donate-crypto.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+</head>
+<body>
+<!-- user donation card -->
+<div class="card-wrap" id="card">
+	<!-- tabs -->
+	<main class="tabs-wrap">
+		<!-- tab buttons -->
+		<nav class="tabs-nav">
+			<button v-for="w in walletsList" :key="w.symbol" :class="{ 'active': w.active }" @click="selectWallet( w.symbol )">{{ w.symbol }}</button>
+		</nav>
+		<!-- tab content -->
+		<section class="tabs-info">
+			<!-- qr image -->
+			<div class="tabs-info-row">
+				<div class="tabs-info-qr">
+					<img :src="getQrImage()" :alt="wallet.name" />
+				</div>
+				<div class="tabs-info-details">
+					<div class="tabs-info-title">Donate {{ wallet.name }}</div>
+					<div class="tabs-info-warn">Send only {{ wallet.name }} ({{ wallet.symbol }}) to this deposit address. Sending any other coin or token to this address may result in the loss of your donation, Thanks!</div>
+				</div>
+			</div>
+			<!-- address input -->
+			<div class="tabs-info-input">
+				<span>Address</span>
+				<input type="text" :value="wallet.address" />
+				<button type="button" @click="copyText( wallet.address )">
+					<span v-if="wallet.copied">✔ Copied</span>
+					<span v-else>✚ Copy</span>
+				</button>
+			</div>
+		</section>
+	</main>
+</div>
+<script src="donate-crypto.js"></script>
+</body>
+</head>
+</html>
