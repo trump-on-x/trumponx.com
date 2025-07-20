@@ -12,37 +12,37 @@ const cryptoWallets = [
 	{
 		symbol: 'BTC',
 		name: 'Bitcoin',
-		address: '3D4FaN7VBzbG6vW2y6G73qVfGkRLuBWhvF',
+		address: 'bc1q0fmneyh9l8de2p53srafzsgf36um0uzz6f3m8f',
 	},
 	{
 		symbol: 'ETH',
 		name: 'Ethereum',
-		address: '0x363Ca9F80Ca55f93CE7B7e12D36Ed30965C0f10D',
+		address: '0x7aB4c0b59d3D56d9e81A41C12828c1C764C5B562',
 	},
 	{
 		symbol: 'DOGE',
 		name: 'Dogecoin',
-		address: 'DKa8JeH66nJZJTpGrirYEhYVotFupnzcfY',
+		address: 'DJ5nnoJjwB2aGGfaeE93WnRrwBZVL1eH9M',
 	},
 	{
 		symbol: 'SOL',
 		name: 'Solana',
-		address: 'CYfuDG4pAykWvhSJjPEB3Xf7MycZqXkT1kiuK4DazSEV',
+		address: 'A3dgQxkfEzdSUEFi9b13WxUxHPTjZTPZqdJWsoTnoDRh',
 	},
 	{
 		symbol: 'BCH',
 		name: 'Bitcoin Cash',
-		address: 'qrq22nr2zrcqczgn33hurjssvvd50jh5fq40thmhky',
+		address: 'qrdk34rwulqpnfcyqu7slwnw3u4md68ua5grj5et7z',
 	},
 	{
 		symbol: 'LTC',
 		name: 'Litecoin',
-		address: 'LeJ8KZWUEPyGwjF4CKc4hkLaYNQkZXLnsm',
+		address: 'ltc1qzhqw8783d0cs3740x7wunusgfv3zf682v6m5hm',
 	},
 	{
 		symbol: 'XRP',
 		name: 'Ripple',
-		address: 'rP7iTgGszW8jg7TEhJjjVJjVifitKRaX6Y',
+		address: 'rPHjos7bjmFM3Xb8wkFzvFDfkhASfVonG',
 	},
 ];
 
